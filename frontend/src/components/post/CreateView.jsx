@@ -104,7 +104,7 @@ const CreateView = () => {
             </FormControl>
             <Box sx={{ minWidth: 120,marginTop: "1%" }}>
             <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label" style={{color:"black"}}>Categories</InputLabel>
+                <InputLabel id="demo-simple-select-label">Categories</InputLabel>
                 <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -112,6 +112,7 @@ const CreateView = () => {
                 onChange={(e) => handleChange(e)}
                 name = "categories"
                 style={{background: "#eee"}}
+
                 >
             <MenuItem value={`Music`} > Music </MenuItem>
             <MenuItem value={`Movies`} > Movies </MenuItem>
