@@ -26,14 +26,14 @@ const useStyles = makeStyles(theme =>({
         margin: '0 30px',
         fontSize: 25,
         background : "#eee",
-        borderRadius: "8px"
+        borderRadius: "5px"
     },
     textarea: {
         width: '100%',
         border: 'none',
         marginTop: 50,
         fontSize: 18,
-        borderRadius: "8px",
+        borderRadius: "5px",
         '&:focus-visible': {
             outline: 'none'
         }
@@ -106,7 +106,7 @@ const CreateView = () => {
             </FormControl>
             <Box sx={{ minWidth: 120,marginTop: "1%",borderBottom:"2px solid white" }}>
             <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label" style={{color: "white"}}>Categories</InputLabel>
+                <InputLabel id="demo-simple-select-label" style={{color: "white"}}>Categories(Select One)</InputLabel>
                 <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"

@@ -26,14 +26,14 @@ const useStyles = makeStyles(theme =>({
         margin: '0 30px',
         fontSize: 25,
         background: "#eee",
-        borderRadius: "8px",
+        borderRadius: "5px",
     },
     textarea: {
         width: '100%',
         border: 'none',
         marginTop: 50,
         fontSize: 18,
-        borderRadius: "8px",
+        borderRadius: "5px",
         '&:focus-visible': {
             outline: 'none'
         }
