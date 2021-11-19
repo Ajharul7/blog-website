@@ -108,7 +108,7 @@ const UpdateView = ({match}) => {
             </FormControl>
             <Box sx={{ minWidth: 120 , marginTop: "1%"}}>
             <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label" > <span style={{color:"black"}}>{`${post.categories}` || "Categories" }</span></InputLabel>
+                <InputLabel id="demo-simple-select-label" > {`${post.categories}` || "Categories" }</InputLabel>
                 <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
