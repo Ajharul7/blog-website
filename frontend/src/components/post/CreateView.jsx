@@ -104,7 +104,7 @@ const CreateView = () => {
             </FormControl>
             <Box sx={{ minWidth: 120,marginTop: "1%" }}>
             <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label" style={{color: "red"}}>Categories</InputLabel>
+                <InputLabel id="demo-simple-select-label" style={{color: "white",borderBottom:"2px solid white"}}>Categories</InputLabel>
                 <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
