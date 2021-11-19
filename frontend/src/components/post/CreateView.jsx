@@ -111,7 +111,7 @@ const CreateView = () => {
                 label="Age"
                 onChange={(e) => handleChange(e)}
                 name = "categories"
-                
+                style={{backgroundColor : "#eee",color: "black"}}
 
                 >
             <MenuItem value={`Music`} > Music </MenuItem>
