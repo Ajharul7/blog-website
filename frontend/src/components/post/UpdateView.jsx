@@ -117,7 +117,6 @@ const UpdateView = ({match}) => {
                 label="Age"
                 onChange={(e) => handleChange(e)}
                 name = "categories"
-                style = {{background:"#eee"}}
                 >
             <MenuItem value={`Music`} > Music </MenuItem>
             <MenuItem value={`Movies`} > Movies </MenuItem>
