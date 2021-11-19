@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'production') {
 
 const PORT = process.env.PORT || 8000;
 
-const URL = "mongodb+srv://user:ajharul1234@blogger.vscx3.mongodb.net/Blogger?retryWrites=true&w=majority";
+
 
 Connection(process.env.MONGODB_URI || URL);
 
