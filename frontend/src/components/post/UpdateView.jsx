@@ -118,7 +118,7 @@ const UpdateView = ({match}) => {
                 onChange={(e) => handleChange(e)}
                 name = "categories"
                 >
-            <MenuItem value={`Music`} > Music </MenuItem>
+            <MenuItem value={`Music`} style={{color: "white"}}> Music </MenuItem>
             <MenuItem value={`Movies`} > Movies </MenuItem>
             <MenuItem value={`Sports`} > Sports </MenuItem>
             <MenuItem value={`Tech`} > Tech </MenuItem>
