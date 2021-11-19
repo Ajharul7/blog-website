@@ -24,7 +24,8 @@ const useStyles = makeStyles(theme =>({
     textField: {
         flex: 1,
         margin: '0 30px',
-        fontSize: 25
+        fontSize: 25,
+        background : "#eee",
     },
     textarea: {
         width: '100%',
@@ -85,7 +86,7 @@ const CreateView = () => {
         <img src={url}  className={classes.image} alt="banner"/>
         <FormControl className={classes.form}>
             <label htmlFor="fileInput">
-            <AddCircle fontSize="large" color="action"/>
+            <AddCircle fontSize="large" style={{ color : "white" }}/>
             </label>
             <input 
                 type="file"
@@ -110,6 +111,7 @@ const CreateView = () => {
                 label="Age"
                 onChange={(e) => handleChange(e)}
                 name = "categories"
+                style={{background: "#eee"}}
                 >
             <MenuItem value={`Music`} > Music </MenuItem>
             <MenuItem value={`Movies`} > Movies </MenuItem>

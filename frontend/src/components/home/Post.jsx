@@ -31,10 +31,12 @@ const useStyles = makeStyles({
         fontSize: 18,
         fontWeight: 600,
         textAlign : "center",
+        color : "#eee",
     },
     detail: {
         fontSize: 14,
-        wordBreak: 'break-word'
+        wordBreak: 'break-word',
+        color:"#eee"
     }
 })
 

@@ -32,7 +32,7 @@ const Contact = () => {
                             <div className="section-title">
                                 <h2 className="title">CONTACT US</h2>
                                 <p className="para">Let us know what you think! In order to provide better service,
-                                     please do not hesitate to give us your feedback. Thank you.</p><hr/>
+                                     please do not hesitate to give us your feedback. Thank you.</p><hr style={{color: "#eee"}}/>
                                 <div className="form-group">
                                 <div className="row">
                                 <div className="col-md-6">

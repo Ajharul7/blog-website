@@ -3,6 +3,12 @@
 body {
   background-color: black;
 }
+.title {
+  color: #eee;
+}
+.para {
+  color: #eee;
+}
 .matp {
     margin-top: 9%;
     font-weight: 50;

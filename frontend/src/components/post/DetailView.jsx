@@ -37,6 +37,7 @@ const useStyles = makeStyles(theme =>({
         fontWeight: 600,
         textAlign: 'center',
         margin: '50px 0 10px 0',
+        color : "#eee",
     },
     subheading: {
         display : "flex",
@@ -93,10 +94,10 @@ const Details = ({match}) => {
         <Link to={`/?username=${post.username}`} className={classes.link}>
             <Typography className={classes.author}>Author :<span style={{fontWeight:600}}> {post.username}</span></Typography>
         </Link>
-            <Typography style={{marginLeft: "auto"}}>{new Date(post.createDate).toDateString()}</Typography>
+            <Typography style={{marginLeft: "auto", color: "#eee"}}>{new Date(post.createDate).toDateString()}</Typography>
             
         </Box>
-        <Typography>{post.description}</Typography>
+        <Typography style={{color : "#eee"}}>{post.description}</Typography>
     </Box>
     </>    
     )
