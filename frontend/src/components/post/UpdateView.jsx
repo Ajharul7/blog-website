@@ -26,12 +26,14 @@ const useStyles = makeStyles(theme =>({
         margin: '0 30px',
         fontSize: 25,
         background: "#eee",
+        borderRadius: "8px",
     },
     textarea: {
         width: '100%',
         border: 'none',
         marginTop: 50,
         fontSize: 18,
+        borderRadius: "8px",
         '&:focus-visible': {
             outline: 'none'
         }
@@ -106,9 +108,9 @@ const UpdateView = ({match}) => {
             <InputBase placeholder="Title" name="title" value={post.title} className={classes.textField} onChange={(e) => handleChange(e)}/>
             <Button onClick={()=>updateBlog()} variant="contained" color="primary">Update</Button>
             </FormControl>
-            <Box sx={{ minWidth: 120 , marginTop: "1%"}}>
+            <Box sx={{ minWidth: 120 , marginTop: "1%",borderBottom:"2px solid white"}}>
             <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label" > {`${post.categories}` || "Categories" }</InputLabel>
+                <InputLabel id="demo-simple-select-label" style={{color: "white"}}> {`${post.categories}` || "Categories" }</InputLabel>
                 <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
