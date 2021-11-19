@@ -104,7 +104,7 @@ const CreateView = () => {
                 />
             <Button onClick={()=>savePost()} variant="contained" color="primary">PUBLISH</Button>
             </FormControl>
-            <Box sx={{ minWidth: 120,marginTop: "1%",borderBottom:"2px solid white" }}>
+            <Box sx={{ minWidth: 120,marginTop: "1%",borderBottom:"2px solid white",color: "white"}}>
             <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label" style={{color: "white"}}>Categories(Select One)</InputLabel>
                 <Select
