@@ -108,7 +108,7 @@ const UpdateView = ({match}) => {
             <InputBase placeholder="Title" name="title" value={post.title} className={classes.textField} onChange={(e) => handleChange(e)}/>
             <Button onClick={()=>updateBlog()} variant="contained" color="primary">Update</Button>
             </FormControl>
-            <Box sx={{ minWidth: 120 , marginTop: "1%",borderBottom:"2px solid white"}}>
+            <Box sx={{ minWidth: 120 , marginTop: "1%",borderBottom:"2px solid white",color: "white"}}>
             <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label" style={{color: "white"}}> {`${post.categories}` || "Categories" }</InputLabel>
                 <Select
@@ -118,7 +118,7 @@ const UpdateView = ({match}) => {
                 onChange={(e) => handleChange(e)}
                 name = "categories"
                 >
-            <MenuItem value={`Music`} style={{color: "white"}}> Music </MenuItem>
+            <MenuItem value={`Music`} > Music </MenuItem>
             <MenuItem value={`Movies`} > Movies </MenuItem>
             <MenuItem value={`Sports`} > Sports </MenuItem>
             <MenuItem value={`Tech`} > Tech </MenuItem>
