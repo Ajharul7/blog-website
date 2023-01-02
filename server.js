@@ -27,6 +27,6 @@ const PORT = process.env.PORT || 8000;
 
 
 
-Connection(process.env.MONGODB_URI || URL);
+Connection(process.env.MONGODB_URI || "mongodb+srv://ajharul7:ajharul1234@cluster0.c94fagc.mongodb.net/?retryWrites=true&w=majority");
 
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
