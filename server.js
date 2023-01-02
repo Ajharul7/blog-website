@@ -27,6 +27,6 @@ const PORT = process.env.PORT || 8000;
 
 
 
-Connection(URL);
+Connection(process.env.MONGODB_URI || URL);
 
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
