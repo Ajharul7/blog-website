@@ -19,6 +19,7 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', Router);
 
+const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, "./frontend/build")));
   let url = path.join(__dirname, "./frontend/build", "index.html");
   app.get("*", (req, res) => {
