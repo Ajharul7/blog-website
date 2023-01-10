@@ -3,6 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import DotEnv from 'dotenv';
 import path from 'path';
+import { fileURLToPath } from 'url';
 //for images
 
 
@@ -19,7 +20,7 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', Router);
 
-const __dirname = path.resolve();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname, "./frontend/build")));
   let url = path.join(__dirname, "./frontend/build", "index.html");
   app.get("*", (req, res) => {
