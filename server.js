@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import DotEnv from 'dotenv';
+const path = require("path");
 //for images
 
 
